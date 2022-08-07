@@ -9,6 +9,8 @@ export class YesNoButtonGroupComponent implements OnInit {
   @Input() public value: string = null;
   @Input() public label = '';
   // EventEmitter: vai emitir uma string
+  // Lembre-se da convenção no qual a @Output() property deve ter o mesmo nome da
+  // @Input() property acrescido com o sufixo Change
   @Output() public valueChange = new EventEmitter<string>();
   public options = YesNoButtonGroupOption;
 
