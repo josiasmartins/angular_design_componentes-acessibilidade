@@ -40,14 +40,15 @@ export class YesNoButtonGroupComponent implements OnInit, ControlValueAccessor {
 
   public writeValue(value: string): void {
     this.value = value;
-    this.onChange(this.value)
+    this.onChange(this.value);
+    this.valueChange.emit(this.value)
   }
 
   public registerOnChange(fn: (value: string) => void): void {
     this.onChange = fn;
   }
 
-  public registerOnTouched(fn: () => {}): void {
+  public registerOnTouched(fn: () => void): void {
     this.onTouched = fn;
   }
 

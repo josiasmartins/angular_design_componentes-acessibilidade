@@ -1,6 +1,6 @@
 <main>
   <h1>Form</h1>
-  <form [formGroup]="formGroup" (submit)="submit()">
+  <form [formGroup]="formGroup" (ngSubmit)="submit()">
     <!--
       formControlName: Esta diretiva é utilizada para ligar um elemento de
       entrada do HTML a um Control de um FormGroup.
@@ -12,5 +12,5 @@
   </form>
   <!-- (valueChange)="yesNoAnswer = $event" -->
   <!-- <span>yesNoAnswer value: {{ yesNoAnswer }}</span> -->
-  <button (submit)="submit()">Submit</button>
+  <button>Submit</button>
 </main>
