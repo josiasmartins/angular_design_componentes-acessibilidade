@@ -18,6 +18,6 @@ export class AppComponent {
   }
 
   public submit(): void {
-    console.log(this.formGroup.value);
+    console.log(this.formGroup.value, 'ibag');
   }
 }

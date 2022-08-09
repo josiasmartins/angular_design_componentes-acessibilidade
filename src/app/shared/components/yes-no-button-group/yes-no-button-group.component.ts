@@ -7,10 +7,17 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
   styleUrls: ['./yes-no-button-group.component.scss'],
   providers: [
     {
+      /**
+       * NG_VALUE_ACESSOR: É um injection token que marca nosso componente para que
+       * seja injetado dentro da infraestrutura do formGroup.
+       */
       provide: NG_VALUE_ACCESSOR,
       multi: true,
       // useExisting: use alguém
       // forwardRef(): mostra só quando tiver a referencia
+      /**
+       * forwardRef: É usado quando o token ao qual precisamos nos referir para fins de DI é declarado, mas ainda não definido
+       */
       useExisting: forwardRef(() => YesNoButtonGroupComponent)
     }
   ]
