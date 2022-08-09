@@ -1,9 +1,12 @@
 <main>
   <h1>Form</h1>
+  <form [formGroup]="formGroup" (ngSubmit)="submit()">
+    <app-yes-no-button-group
+      formControlName="yesNoAnswer"
+      label="Are you good enough in Angular"
+    ></app-yes-no-button-group>
+  </form>
   <!-- (valueChange)="yesNoAnswer = $event" -->
-  <app-yes-no-button-group
-    [(value)]="yesNoAnswer"
-    label="Are you good enough in Angular"
-  ></app-yes-no-button-group>
-  <span>yesNoAnswer value: {{ yesNoAnswer }}</span>
+  <!-- <span>yesNoAnswer value: {{ yesNoAnswer }}</span> -->
+  <button>Submit</button>
 </main>

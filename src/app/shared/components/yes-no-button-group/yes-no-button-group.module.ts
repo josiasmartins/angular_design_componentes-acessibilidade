@@ -11,4 +11,4 @@ import { YesNoButtonGroupComponent } from './yes-no-button-group.component';
   ],
   exports: [YesNoButtonGroupComponent]
 })
-export class YesNoButtonGroupModule { }
+export class YesNoButtonGroupModule {  }
