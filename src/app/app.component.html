@@ -1,6 +1,10 @@
 <main>
   <h1>Form</h1>
   <form [formGroup]="formGroup" (ngSubmit)="submit()">
+    <!--
+      formControlName: Esta diretiva é utilizada para ligar um elemento de
+      entrada do HTML a um Control de um FormGroup.
+    -->
     <app-yes-no-button-group
       formControlName="yesNoAnswer"
       label="Are you good enough in Angular"
