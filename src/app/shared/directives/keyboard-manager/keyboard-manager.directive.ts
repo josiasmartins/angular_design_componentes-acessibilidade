@@ -1,4 +1,4 @@
-import { ContentChild, Directive, HostListener, QueryList } from '@angular/core';
+import { ContentChildren, Directive, HostListener, QueryList } from '@angular/core';
 import { KeyboardManagerItemDirective } from './keyboard-manager-item.directive';
 
 @Directive({
@@ -8,7 +8,7 @@ export class KeyboardManagerDirective {
 
   // Contentchild: busca todo mundo que é filho do elemento KeyboardManagerDirective
   // QueryList: atualiza dinamicamente as listas
-  @ContentChild(KeyboardManagerItemDirective) public items: QueryList<KeyboardManagerItemDirective> = null;
+  @ContentChildren(KeyboardManagerItemDirective) public items: QueryList<KeyboardManagerItemDirective> = null;
 
   @HostListener('keyup', ['$event'])
   public manageKeys(event: KeyboardEvent): void { 
@@ -31,6 +31,7 @@ export class KeyboardManagerDirective {
 
   public moveFocus(direction: ArrowDirective): KeyboardManagerItemDirective {
     const items = this.items.toArray();
+    console.log(this.items)
     const currentSelectedIndex = items.findIndex(item => item.isFocused());
     const targetElementFocus = items[currentSelectedIndex + direction];
 
