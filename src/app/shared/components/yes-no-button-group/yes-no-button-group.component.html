@@ -1,23 +1,31 @@
 <!-- role: permite aplicar semantica e elementos não semanticos do html, incluse mudar a semantica da tag -->
 <!-- aria-labelledby:  -->
 <div
+  appKm
   role="radiogroup"
   [attr.arialabelledby]="id"
   class="button-group"
 >
   <label [attr.id] id="id" class="label">{{ label }}</label>
   <!-- [class.button-pressed]: se  for true, recebe a classe -->
+  <!-- tabindex: 0 ganha foco; -1 pula o elemento -->
   <button
+    appKmItem
+    (focused)="activate(options.YES)"  
     role="radio"
     [attr.aria-checked]="value === options.YES"
+    [attr.tabindex]="value === options.YES || value === null ? 0 : -1"
     class="button button-yes"
     type="button"
     (click)="activate(options.YES)"
     [class.button-pressed]="value === options.YES"
   >Yes</button>
   <button
+    appKmItem
+    (focused)="activate(options.YES)"  
     role="radio"
     [attr.aria-labelledby]="value === options.NO"
+    [attr.tabindex]="value === options.NO ? 0 : -1"
     class="button button-no"
     type="button"
     (click)="activate(options.NO)"
