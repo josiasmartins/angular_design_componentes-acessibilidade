@@ -12,7 +12,10 @@ import { KeyboardManagerItemDirective } from './keyboard-manager-item.directive'
   imports: [
     CommonModule,
   ],
-  exports: [KeyboardManagerDirective]
+  exports: [
+    KeyboardManagerDirective,
+    KeyboardManagerItemDirective
+  ]
 })
 export class KeyboardManagerModule {
 
