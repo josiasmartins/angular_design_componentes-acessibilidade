@@ -1,11 +1,11 @@
-<!-- role: papel -->
+<!-- role: permite aplicar semantica e elementos não semanticos do html, incluse mudar a semantica da tag -->
 <!-- aria-labelledby:  -->
 <div
   role="radiogroup"
-  aria-labelledby="label"
+  [attr.arialabelledby]="id"
   class="button-group"
 >
-  <label id="label" class="label">{{ label }}</label>
+  <label [attr.id] id="id" class="label">{{ label }}</label>
   <!-- [class.button-pressed]: se  for true, recebe a classe -->
   <button
     role="radio"
