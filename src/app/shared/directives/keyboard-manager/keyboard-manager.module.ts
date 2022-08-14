@@ -17,6 +17,4 @@ import { KeyboardManagerItemDirective } from './keyboard-manager-item.directive'
     KeyboardManagerItemDirective
   ]
 })
-export class KeyboardManagerModule {
-
-}
+export class KeyboardManagerModule {}

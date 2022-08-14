@@ -10,6 +10,4 @@ import { DisabledControlDirective } from './disabled-control.directive';
   ],
   exports: [DisabledControlDirective]
 })
-export class DisabledControlModule {
-
-}
+export class DisabledControlModule {}
