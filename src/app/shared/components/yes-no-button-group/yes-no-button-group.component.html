@@ -11,6 +11,7 @@
   <!-- tabindex: 0 ganha foco; -1 pula o elemento -->
   <button
     appKmItem
+    (focused)="activate(options.YES)"  
     role="radio"
     [attr.aria-checked]="value === options.YES"
     [attr.tabindex]="value === options.YES || value === null ? 0 : -1"
@@ -21,6 +22,7 @@
   >Yes</button>
   <button
     appKmItem
+    (focused)="activate(options.YES)"  
     role="radio"
     [attr.aria-labelledby]="value === options.NO"
     [attr.tabindex]="value === options.NO ? 0 : -1"
