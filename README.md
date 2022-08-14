@@ -1,5 +1,9 @@
 # A11yP1
 
+## tools usage and building with 
+uuid: usado para generação de id unicos
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
 ## Development server
