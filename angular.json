@@ -130,7 +130,6 @@
       }
     }
   },
-  "defaultProject": "a11y-p1",
   "cli": {
     "analytics": false
   }

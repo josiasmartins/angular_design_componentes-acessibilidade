@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 export class AppComponent {
   title = 'a11y-p1';
   // public yesNoAnswer = 'no';
-  public formGroup: FormGroup = null;
+  public formGroup: UntypedFormGroup = null;
 
-  constructor(formBuilder: FormBuilder) {
+  constructor(formBuilder: UntypedFormBuilder) {
     this.formGroup = formBuilder.group({
       yesNoAnswer: [{
         value: 'no',
