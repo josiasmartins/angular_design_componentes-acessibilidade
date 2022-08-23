@@ -14,6 +14,7 @@ import { DisabledControlModule } from '../../directives/disabled-control/disable
     // KeyboardManagerModule,
     DisabledControlModule
   ],
+  schemas: [],
   exports: [YesNoButtonGroupComponent]
 })
 export class YesNoButtonGroupModule {  }
