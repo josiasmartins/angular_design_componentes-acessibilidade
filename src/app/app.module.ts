@@ -15,7 +15,6 @@ import { DisabledControlModule } from './shared/directives/disabled-control/disa
     ReactiveFormsModule,
     FormsModule,
     YesNoButtonGroupModule,
-    DisabledControlModule
   ],
   providers: [],
   bootstrap: [AppComponent]
