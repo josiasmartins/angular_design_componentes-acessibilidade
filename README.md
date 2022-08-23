@@ -1,7 +1,13 @@
 # A11yP1
 
+
+## demo do projeto
+![demo](./src/assets/images/angular-design-acessibilidade1.gif);
+
 ## tools usage and building with 
-uuid: usado para generação de id unicos
+- Angular 11;
+- node 16;
+- uuid: usado para generação de id unicos
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
