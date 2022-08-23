@@ -11,7 +11,7 @@ import { DisabledControlModule } from '../../directives/disabled-control/disable
   declarations: [YesNoButtonGroupComponent],
   imports: [
     CommonModule,
-    KeyboardManagerModule,
+    // KeyboardManagerModule,
     DisabledControlModule
   ],
   schemas: [],
